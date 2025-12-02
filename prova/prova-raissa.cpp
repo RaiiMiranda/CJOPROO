@@ -69,12 +69,17 @@ int main(void)
     cout << "\n-----------------------------------------------------------------------------------------------------" << endl;
     cout << "EXIBICAO DOS DADOS INICIAIS\n";
     cout << "-----------------------------------------------------------------------------------------------------\n" << endl;
-    
+
+    /*
     veiculo1.exibirDados();
     veiculo2.exibirDados();
     veiculo3.exibirDados();
     veiculo4.exibirDados();
     veiculo5.exibirDados();
+    */
+
+    for (int i = 0; i < 5; i++)
+        vetorVeiculos[i].exibirDados();
 
     cout << "\n-----------------------------------------------------------------------------------------------------" << endl;
     cout << "ALTERANDO INFORMACOES\n";
@@ -105,4 +110,5 @@ int main(void)
     cin.get();
     return 0;
 }
+
 
