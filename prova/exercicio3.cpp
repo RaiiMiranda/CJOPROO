@@ -64,15 +64,9 @@ void Veiculo::exibirDados() {
 // Método para Calcular e Retornar Autonomia
 // Autonomia = quantos quilômetros o veículo consegue andar com uma certa quantidade de combustível
 // Autonomia (em km) = consumo (km por litro) × quantidade de combustível (litros)
-string Veiculo::calcularAutonomia(float totalCombustivel) {
-    float autonomia;
-
-    autonomia = totalCombustivel / quilometragem;
-    
-    if (autonomia <= 350)
-        return "autonomia ok";
-    return "autonomia precisa melhorar";
-
+float Veiculo::calcularAutonomia(float totalCombustivel) {
+    return consumo * totalCombustivel;
 }
+
 
 
