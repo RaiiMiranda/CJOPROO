@@ -8,8 +8,8 @@
 using namespace std;
 
 // Construtor
-Veiculo::Veiculo() {}
-// Veiculo::Veiculo(std::string modelo, std::string cor, int anoFabricacao, float quilometragem) : modelo(modelo), cor(cor), anoFabricacao(anoFabricacao), quilometragem(quilometragem) {}
+//Veiculo::Veiculo() {}
+Veiculo::Veiculo(std::string modelo, std::string cor, int anoFabricacao, float quilometragem) : modelo(modelo), cor(cor), anoFabricacao(anoFabricacao), quilometragem(quilometragem) {}
 
 // Getters e Setters
 void Veiculo::setModelo(string modelo) {
@@ -62,4 +62,5 @@ string Veiculo::calcularAutonomia(float totalCombustivel) {
     if (autonomia <= 350)
         return "autonomia ok";
     return "autonomia precisa melhorar";
+
 }
