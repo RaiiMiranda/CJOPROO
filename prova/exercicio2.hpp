@@ -16,8 +16,8 @@ class Veiculo
         float quilometragem;
 
     public:
-        explicit Veiculo();
-        // explicit Veiculo(std::string modelo, std::string cor, int anoFabricacao, float quilometragem);
+        //explicit Veiculo();
+        explicit Veiculo(std::string modelo, std::string cor, int anoFabricacao, float quilometragem);
         void setModelo(std::string modelo);
         std::string getModelo();
         void setCor(std::string cor);
@@ -29,5 +29,6 @@ class Veiculo
         void exibirDados();
         std::string calcularAutonomia(float totalCombustivel);
 };
+
 
 #endif
