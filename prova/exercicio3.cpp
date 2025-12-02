@@ -44,6 +44,14 @@ float Veiculo::getQuilometragem() {
     return quilometragem;
 }
 
+void Veiculo::setConsumo(float consumo) {
+    this->consumo = consumo;
+}
+
+float Veiculo::getConsumo() {
+    return consumo;
+}
+
 // Método para Exibir os Dados
 void Veiculo::exibirDados() {
     cout << "Modelo ...........: " << getModelo() << endl;
@@ -66,4 +74,5 @@ string Veiculo::calcularAutonomia(float totalCombustivel) {
     return "autonomia precisa melhorar";
 
 }
+
 
