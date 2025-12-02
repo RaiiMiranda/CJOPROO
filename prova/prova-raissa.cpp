@@ -17,6 +17,8 @@ int main(void)
     //Veiculo veiculo3("Modelo3", "Vermelho", 2000, 10000);
     //Veiculo veiculo4("Modelo4", "Prata", 2000, 10000);
     //Veiculo veiculo5("Modelo5", "Preto", 2000, 10000);
+    
+    /*
     Veiculo veiculo1;
     Veiculo veiculo2;
     Veiculo veiculo3;
@@ -54,7 +56,15 @@ int main(void)
     vetorVeiculos[2] = veiculo3;
     vetorVeiculos[3] = veiculo4;
     vetorVeiculos[4] = veiculo5;
+    */
 
+    Veiculo vetorVeiculos[5] = {
+        Veiculo("Modelo1", "Cor1", 1900, 10000),
+        Veiculo("Modelo2", "Cor2", 1900, 10000),
+        Veiculo("Modelo3", "Cor3", 1900, 10000),
+        Veiculo("Modelo4", "Cor4", 1900, 10000),
+        Veiculo("Modelo5", "Cor5", 1900, 10000)
+    };
     // Demonstração Utilização das Funcionalidades
     cout << "\n-----------------------------------------------------------------------------------------------------" << endl;
     cout << "EXIBICAO DOS DADOS INICIAIS\n";
@@ -95,3 +105,4 @@ int main(void)
     cin.get();
     return 0;
 }
+
