@@ -14,6 +14,7 @@ class Veiculo
         std::string cor;
         int anoFabricacao;
         float quilometragem;
+        float consumo;
 
     public:
         //explicit Veiculo();
@@ -26,9 +27,12 @@ class Veiculo
         int getAnoFabricacao();
         void setQuilometragem(float quilometragem);
         float getQuilometragem();
+        void setConsumo(float consumo);
+        float getConsumo();
         void exibirDados();
         std::string calcularAutonomia(float totalCombustivel);
 };
 
 
 #endif
+
