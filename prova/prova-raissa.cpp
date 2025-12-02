@@ -67,6 +67,7 @@ int main(void)
         Veiculo("Modelo4", "Cor4", 1900, 10000),
         Veiculo("Modelo5", "Cor5", 1900, 10000)
     };
+    
     // Demonstração Utilização das Funcionalidades
     cout << "\n-----------------------------------------------------------------------------------------------------" << endl;
     cout << "EXIBICAO DOS DADOS INICIAIS\n";
@@ -113,12 +114,8 @@ int main(void)
     veiculo1.setConsumo(12); // 12 km por litro
     float autonomia = veiculo1.calcularAutonomia(30); // 30 litros
     cout << "Autonomia: " << autonomia << " km" << endl;
-
     
     cout << "\nTecle <Enter> para encerrar...";
     cin.get();
     return 0;
 }
-
-
-
