@@ -12,11 +12,13 @@ int main(void)
 {
     float totalCombustivel;
 
-    //Veiculo veiculo1("Modelo1", "Branco", 2000, 10000);
-    //Veiculo veiculo2("Modelo2", "Rosa", 2000, 10000);
-    //Veiculo veiculo3("Modelo3", "Vermelho", 2000, 10000);
-    //Veiculo veiculo4("Modelo4", "Prata", 2000, 10000);
-    //Veiculo veiculo5("Modelo5", "Preto", 2000, 10000);
+    /*
+    Veiculo veiculo1("Modelo1", "Branco", 2000, 10000);
+    Veiculo veiculo2("Modelo2", "Rosa", 2000, 10000);
+    Veiculo veiculo3("Modelo3", "Vermelho", 2000, 10000);
+    Veiculo veiculo4("Modelo4", "Prata", 2000, 10000);
+    Veiculo veiculo5("Modelo5", "Preto", 2000, 10000);
+    */
     
     /*
     Veiculo veiculo1;
@@ -100,15 +102,23 @@ int main(void)
     cout << "APRESENTANDO A AUTONOMIA\n";
     cout << "-----------------------------------------------------------------------------------------------------\n" << endl;
 
+    /*
     cout << "Veiculo 1: " << veiculo1.calcularAutonomia(30) << endl;
     cout << "Veiculo 2: " << veiculo2.calcularAutonomia(30) << endl;
     cout << "Veiculo 3: " << veiculo3.calcularAutonomia(30) << endl;
     cout << "Veiculo 4: " << veiculo4.calcularAutonomia(30) << endl;
     cout << "Veiculo 5: " << veiculo5.calcularAutonomia(30) << endl;
+    */
+    
+    veiculo1.setConsumo(12); // 12 km por litro
+    float autonomia = veiculo1.calcularAutonomia(30); // 30 litros
+    cout << "Autonomia: " << autonomia << " km" << endl;
+
     
     cout << "\nTecle <Enter> para encerrar...";
     cin.get();
     return 0;
 }
+
 
 
